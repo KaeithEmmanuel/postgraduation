@@ -62,7 +62,7 @@ export default function CompetitiveData() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    fetch('https://postgraduationfront.vercel.app/api/student', {
+    fetch('https://postgraduation.vercel.app/api/student', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

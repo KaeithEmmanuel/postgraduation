@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const mongoUrl = "mongodb://localhost:27017/HigherStudies";
+const mongoUrl = "mongodb+srv://Kaeithemmanuel:Kaeith2004@cluster0.14wxevw.mongodb.net/HigherStudies";
 
 if (!mongoUrl) {
     console.error("Error: MONGO_URL is not defined in the .env file.");

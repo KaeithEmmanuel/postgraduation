@@ -43,7 +43,7 @@ export default function HigherStudies() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://postgraduationfront.vercel.app/api/submit', {
+      const response = await fetch('https://postgraduation.vercel.app/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
