@@ -4,9 +4,7 @@ import Footer from './Footer';
 import Nav from './Nav';
 import './comp.css'
 import { useNavigate } from 'react-router-dom';
-import dotenv from 'dotenv';
 
-dotenv.config();
 
 export default function CompetitiveData() {
   const [formData, setFormData] = useState({
@@ -64,7 +62,7 @@ export default function CompetitiveData() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    fetch('${process.env.LINK}/api/student', {
+    fetch('https://postgraduationfront.vercel.app/api/student', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

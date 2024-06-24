@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Nav from './Nav';
 import './comp.css';
-import dotenv from 'dotenv';
-dotenv.config();
+i
 import { useNavigate } from 'react-router-dom';
 
 export default function HigherStudies() {
@@ -44,7 +43,7 @@ export default function HigherStudies() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('${process.env.LINK}/api/submit', {
+      const response = await fetch('https://postgraduationfront.vercel.app/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
