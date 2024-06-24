@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Nav from './Nav';
 import './comp.css';
+import dotenv from 'dotenv';
+dotenv.config();
 import { useNavigate } from 'react-router-dom';
 
 export default function HigherStudies() {
