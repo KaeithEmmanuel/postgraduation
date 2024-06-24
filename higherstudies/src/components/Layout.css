@@ -1,0 +1,7 @@
+.center-content {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    min-height: 100vh; /* Adjust based on Nav and Footer height */
+  }
+  
